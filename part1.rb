@@ -2,11 +2,14 @@
 # ignore case punctuation and nonword characters
 def palindrome?(str ="kayak")
   # YOUR CODE HERE
-	if str =~ /\A(?<p>| \w | (?: (?<l>\w) \g<p> \k<l+0> ))\z/x 
-	#str = str.downcase
-	#if str == str.reverse
-	#	return true
-	
+  if str =~ /\A(?<p>| \w | (?: (?<l>\w) \g<p> \k<l+0> ))\z/x
+  #str = str.downcase
+  #if str == str.reverse
+  # return true
+
+
+    john meehan wrote this 8/10/12 21.42
+
 end
 
 #def count_words(str)
