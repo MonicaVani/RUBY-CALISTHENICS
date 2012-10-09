@@ -26,21 +26,27 @@ end
 def rps_tournament_winner(tournament)
 	# takes in a tournament as an array and returns a winner
  	# YOUR CODE HERE
-	if tournament.length <= 1
+	#if tournament.length <= 1
 		# if 1 player do nothing?
-	elsif tournament.length >=2
+	#elsif tournament.length >=2
 		
 		# 2 player play normal
 	
-	puts tlength
-	puts tournament
-	tournament.each do |round|  
-		puts round.length		
-		puts rps_game_winner(round)
+	#puts tlength
+	#puts tournament
+	#tournament.each do |round|  
+	#	puts round.length		
+	#	puts rps_game_winner(round)
+	#end
+
+	if tournament[0][1].class==String
+		rps_game_winner(tournament)
+	else
+		round1 = rps_tournament_winner(tournament[0])
+		round2 = rps_tournament_winner(tournament[1])
+		rps_tournament_winner([round1,round2])
 	end
 end
-# how will i use this?.
-
 
 
 #test dave should win
