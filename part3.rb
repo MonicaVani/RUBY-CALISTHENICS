@@ -15,7 +15,7 @@ def combine_anagrams(words)
 	end
 		
 	# ouput the arrays!!
-	return anagramarray.uniq
+	return anagramarray.uniq  #moved removal of duplication to here 
 
 end
 
