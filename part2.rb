@@ -7,6 +7,7 @@ end
 
 def rps_game_winner(game)
   # YOUR CODE HERE
+	raise WrongNumberOfPlayersError unless game.length == 2
 end
 
 def rps_tournament_winner(tournament)
