@@ -26,10 +26,11 @@ end
 def rps_tournament_winner(tournament)
 	# takes in a tournament as an array and returns a winner
  	# YOUR CODE HERE
-	if tournament.length >= 2
-		# if 2 players to play do normal play
-	else
-		# 
+	if tournament.length <= 1
+		# if 1 player do nothing?
+	elsif tournament.length >=2
+		
+		# 2 player play normal
 	
 	puts tlength
 	puts tournament
