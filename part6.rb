@@ -22,7 +22,7 @@ end
 class String
   # YOUR CODE HERE part b
 	def palindrome?
-		p = self.downcase.gsub(/[^a-z]*\s*\d*/, "") # might have to change regex to /\W/x
+		p = self.downcase.gsub( /\W/x , "") # might have to change regex to /[^a-z]*\s*\d*/
 		p == p.reverse
 	end
 end
